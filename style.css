@@ -1,0 +1,164 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(./images/bg-mobile.svg)no-repeat, hsl(257, 40%, 49%);
+    background-size: contain;
+
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.logo {
+    width: 9rem;
+}
+
+
+
+header {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+
+section {
+    text-align: center;
+    color: #fff;
+}
+
+.content {
+    margin-top: 2em;
+    line-height: 1.5;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    margin: 1em 0;
+}
+
+button {
+    display: inline-block;
+    background-color: #fff;
+    color: hsl(257, 40%, 49%);
+
+    border: none;
+    padding: 0.5em 5em;
+    margin-top: 1em;
+    border-radius: 2em;
+    box-shadow: 0 .4em 0.5em rgba(0, 0, 0, 0.15);
+
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+
+
+a {
+    text-decoration: none;
+}
+
+.fa-brands {
+    color: #fff;
+    padding: .5em;
+    margin-right: .8em;
+
+    border: solid 1px #fff;
+    border-radius: 50%;
+
+}
+
+.fa-facebook-f {
+    padding: .5em .7em;
+}
+
+footer {
+    margin: 2em 0;
+}
+
+.footer__row {
+    display: flex;
+    justify-content: center;
+}
+
+button:hover {
+    background-color: hsl(300, 69%, 71%);
+    color: #fff;
+}
+
+.fa-brands:hover {
+    border-color: hsl(300, 69%, 71%);
+    color: hsl(300, 69%, 71%);
+}
+
+@media (min-width:600px) {
+    .container {
+        width: 90%;
+    }
+
+    body {
+        background: url(./images/bg-desktop.svg) no-repeat, hsl(257, 40%, 49%);
+        background-size: contain;
+
+    }
+
+    header {
+        margin-bottom: 5rem;
+        margin-top: 2.5rem;
+    }
+
+    .logo {
+        width: 13rem;
+    }
+
+    section {
+
+        margin-top: 7.2em;
+        text-align: left;
+    }
+
+    .section__row {
+        display: flex;
+        gap: 3em;
+    }
+
+    .illus {
+        width: 60%;
+        /* margin-left: -2em; */
+    }
+
+    .content {
+        width: 35%;
+    }
+
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    button {
+        padding: 1em 4em;
+    }
+
+
+
+    .footer__row {
+        justify-content: flex-end;
+    }
+}
